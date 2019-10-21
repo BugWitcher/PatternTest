@@ -14,6 +14,6 @@ public class Main {
 
         System.out.println("Welcome to Pattern Test 3.0 test");
 
-        System.out.println("Welcome to Pattern Test 4.0 test");
+        System.out.println("Welcome to Pattern Test 4.1 test");
     }
 }
