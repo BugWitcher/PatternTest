@@ -14,7 +14,7 @@ public class Task {
     }
 
     public Task(long id, String summary, String description, boolean done,
-                Date dueDate) {
+         Date dueDate) {
         this.id = id;
         this.summary = summary;
         this.description = description;
@@ -57,5 +57,10 @@ public class Task {
 
     public void setDueDate(Date dueDate) {
         this.dueDate = new Date(dueDate.getTime());
+    }
+
+    @Override
+    public String toString() {
+        return id +" "+ getDescription() +" "+ getSummary();
     }
 }

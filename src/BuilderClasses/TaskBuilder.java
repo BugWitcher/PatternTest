@@ -19,6 +19,10 @@ public class TaskBuilder {
         this.dueDate = dueDate;
     }
 
+    public TaskBuilder(int i) {
+        this.id = i;
+    }
+
 
     public TaskBuilder setSummary(String summary) {
         this.summary = summary;
