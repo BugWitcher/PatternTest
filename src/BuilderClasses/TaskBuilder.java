@@ -43,5 +43,5 @@ public class TaskBuilder {
         return new Task(id,summary, description,done, dueDate);
     }
 
-    //Wersja 6.0
+    //Wersja 6.02
 }
