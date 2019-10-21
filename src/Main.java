@@ -1,4 +1,5 @@
 
+import BuilderClasses.Task;
 import SingletonClasses.Singleton_v1;
 
 public class Main {
@@ -17,5 +18,8 @@ public class Main {
         System.out.println("Welcome to Pattern Test 4.1 test");
 
         /* Builder TEST */
+        //Task task = new TaskBuilder(5).setDescription("Hello").setSummary("Test").build();
+       //System.out.println(task);
     }
-}
+    }
+
