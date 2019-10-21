@@ -1,3 +1,4 @@
+package SingletonClasses;
 
 /*
   1. prywatny konstruktor
