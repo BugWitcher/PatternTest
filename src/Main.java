@@ -1,9 +1,14 @@
 
 import DecoratorClasses.BasicArmor;
 import DecoratorClasses.*;
+import RandomLuck.RandomLuck;
 import SingletonClasses.Singleton_v1;
 import BuilderClasses.Task;
 import BuilderClasses.TaskBuilder;
+import SerializableTests.*;
+import Java8Features.*;
+
+import java.io.IOException;
 
 public class Main {
 
@@ -24,6 +29,14 @@ public class Main {
         /* Builder TEST */
         Task task = new TaskBuilder(5).setDescription("Hello").setSummary("Test").build();
         System.out.println(task);
+    }
+
+    public static void SerializationTest() {
+        SerializationExample serEx = new SerializationExample();
+    }
+
+    public static void DownloadingTest() throws IOException {
+        RandomLuck r = new RandomLuck();
     }
 
     public static void DecoratorTest() {
@@ -57,7 +70,12 @@ public class Main {
         System.out.println("Witcher  Armor strength " + witcher2.getArmor());
     }
 
-    public static void main(String[] args) {
+
+    public static void Unit1Test() {
+        Unit1 unit = new Unit1();
+    }
+
+    public static void main(String[] args) throws IOException {
         System.out.println("Welcome to Pattern Test 1.0");
         //Git test
 
@@ -76,11 +94,16 @@ public class Main {
         System.out.println("Welcome to Pattern Test 5.0 ");
         // refactoring of main class
 
+        System.out.println("Welcome to Pattern Test 6.0 ");
+        // test of serialization mechanism
+        SerializationTest();
 
+        System.out.println("Welcome to Pattern Test 7.0 ");
+        Unit1Test();
 
+        System.out.println("Welcome to Pattern Test 8.0 ");
 
-
-
+        DownloadingTest();
 
 
 
